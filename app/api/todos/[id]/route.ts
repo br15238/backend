@@ -1,8 +1,8 @@
 import { NextRequest } from 'next/server'
 
+import { ApiError } from '@/lib/error'
 import { handleApi } from '@/lib/handleApi'
 import prisma from '@/lib/prisma'
-import { ApiError } from '@/lib/error'
 
 export async function PATCH (req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
   return handleApi(async () => {
