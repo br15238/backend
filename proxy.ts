@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
-import { corsProxy, loggerProxy, authProxy } from '@/lib/proxy/apiProxies'
+import { corsProxy, loggerProxy, authProxy } from '@/lib/apiProxies'
 
 export function proxy (request: NextRequest) {
   loggerProxy(request)
